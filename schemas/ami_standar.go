@@ -1,4 +1,4 @@
-package types
+package schemas
 
 type AmiStandar struct {
 	IDStandar  int    `gorm:"primaryKey;column:id_standar" json:"-"`

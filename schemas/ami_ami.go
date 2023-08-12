@@ -1,4 +1,4 @@
-package types
+package schemas
 
 import (
 	"gorm.io/datatypes"

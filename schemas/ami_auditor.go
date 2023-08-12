@@ -1,9 +1,10 @@
-package types
+package schemas
 
-type AmiFakultas struct {
-	IDFakultas int    `gorm:"primaryKey;column:id_fakultas" json:"-"`
-	Fakultas   string `gorm:"column:fakultas" json:"fakultas"`
-	Dekan      string `gorm:"column:dekan" json:"dekan"`
+type AmiAuditor struct {
+	IDAuditor  int    `gorm:"primaryKey;column:id_auditor" json:"-"`
+	IDFakultas int    `gorm:"column:id_fakultas" json:"idFakultas"`
+	IDProdi    int    `gorm:"column:id_prodi" json:"idProdi"`
+	Auditor    string `gorm:"column:auditor" json:"auditor"`
 	Nidn       string `gorm:"column:nidn" json:"nidn"`
 	Niknip     string `gorm:"column:niknip" json:"niknip"`
 	Telp       string `gorm:"column:telp" json:"telp"`
@@ -13,6 +14,6 @@ type AmiFakultas struct {
 	IDSiklus   int    `gorm:"column:id_siklus" json:"idSiklus"`
 }
 
-func (m *AmiFakultas) TableName() string {
-	return "ami_fakultas"
+func (m *AmiAuditor) TableName() string {
+	return "ami_auditor"
 }

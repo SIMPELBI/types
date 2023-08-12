@@ -1,4 +1,4 @@
-package types
+package schemas
 
 type AmiJenjang struct {
 	IDJenjang int    `gorm:"primaryKey;column:id_jenjang" json:"-"`

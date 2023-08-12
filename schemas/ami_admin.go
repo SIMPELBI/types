@@ -1,4 +1,4 @@
-package types
+package schemas
 
 type AmiAdmin struct {
 	IDAdmin  int    `gorm:"primaryKey;column:id_admin" json:"-"`

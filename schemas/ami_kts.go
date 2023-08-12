@@ -1,4 +1,4 @@
-package types
+package schemas
 
 type AmiKts struct {
 	IDKts int    `gorm:"primaryKey;column:id_kts" json:"-"`
