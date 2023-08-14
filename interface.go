@@ -1,8 +1,10 @@
 package types
 
+import "context"
+
 type Schemas[I any, O any] interface {
-	GetById(id I) (O, error)
-	Get() (O, error)
-	Update(data I) error
-	Delete(data I) error
+	GetById(context.Context, I) (O, error)
+	Get(context.Context) (O, error)
+	Update(context.Context, I) error
+	Delete(context.Context, I) error
 }
