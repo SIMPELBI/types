@@ -1,4 +1,4 @@
-package schemas
+package model
 
 type AmiSetting struct {
 	IDSetting int    `gorm:"primaryKey;column:id_setting" json:"-"`

@@ -1,4 +1,4 @@
-package schemas
+package model
 
 type AmiKts struct {
 	IDKts int    `gorm:"primaryKey;column:id_kts" json:"-"`
