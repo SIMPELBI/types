@@ -2,7 +2,7 @@ package model
 
 import (
 	"database/sql"
-	"gorm.io/datatypes"
+	"github.com/golang-module/carbon/v2"
 )
 
 type AmiAmi struct {
@@ -14,10 +14,11 @@ type AmiAmi struct {
 	IDAnggota2     sql.NullInt32  `gorm:"column:id_anggota2" json:"idAnggota2"`
 	IDSiklus       int            `gorm:"column:id_siklus" json:"idSiklus"`
 	Status         sql.NullString `gorm:"column:status" json:"status"`
-	TglRtm         datatypes.Date `gorm:"column:tgl_rtm" json:"tglRtm"`
-	TglSelesai     datatypes.Date `gorm:"column:tgl_selesai" json:"tglSelesai"`
+	TglRtm         carbon.Date    `gorm:"column:tgl_rtm" json:"tglRtm"`
+	TglSelesai     carbon.Date    `gorm:"column:tgl_selesai" json:"tglSelesai"`
 }
 
+// TableName get sql table name.获取数据库表名
 func (m *AmiAmi) TableName() string {
 	return "ami_ami"
 }

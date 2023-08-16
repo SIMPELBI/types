@@ -11,6 +11,7 @@ type AmiAdmin struct {
 	Password string         `gorm:"column:password" json:"password"`
 	Foto     sql.NullString `gorm:"column:foto" json:"foto"`
 	IDSiklus sql.NullInt32  `gorm:"column:id_siklus" json:"idSiklus"`
+	Telp     string         `gorm:"column:telp" json:"telp"`
 }
 
 func (m *AmiAdmin) TableName() string {
