@@ -1,9 +1,7 @@
 package model
 
-import "github.com/golang-module/carbon/v2"
-
 type AmiSiklus struct {
-	IDSiklus int           `gorm:"primaryKey;column:id_siklus" json:"-"`
+	IDSiklus int `gorm:"primaryKey;column:id_siklus" json:"-"`
 	Tahun    int `gorm:"column:tahun" json:"tahun"`
 }
 
