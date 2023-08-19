@@ -2,7 +2,6 @@ package model
 
 import (
 	"database/sql"
-	"github.com/golang-module/carbon/v2"
 )
 
 type AmiKesimpulan struct {
@@ -10,7 +9,7 @@ type AmiKesimpulan struct {
 	IDAmi        int            `gorm:"column:id_ami" json:"idAmi"`
 	CkpLengkap   string         `gorm:"column:ckp_lengkap" json:"ckpLengkap"`
 	Sebutkan     sql.NullString `gorm:"column:sebutkan" json:"sebutkan"`
-	Tgl          carbon.Carbon  `gorm:"column:tgl" json:"tgl"`
+	Tgl          sql.NullTime   `gorm:"column:tgl" json:"tgl"`
 	IDAuditor    int            `gorm:"column:id_auditor" json:"idAuditor"`
 }
 

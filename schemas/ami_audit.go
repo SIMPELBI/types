@@ -16,7 +16,7 @@ type AmiAudit struct {
 	Status       string         `gorm:"column:status" json:"status"`
 	Tgl          carbon.Carbon  `gorm:"column:tgl" json:"tgl"`
 	IDAuditor    int            `gorm:"column:id_auditor" json:"idAuditor"`
-	TglPerbaikan carbon.Date    `gorm:"column:tgl_perbaikan" json:"tglPerbaikan"`
+	TglPerbaikan sql.NullTime   `gorm:"column:tgl_perbaikan" json:"tglPerbaikan"`
 }
 
 // TableName get sql table name.获取数据库表名
