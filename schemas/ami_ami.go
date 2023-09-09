@@ -15,7 +15,7 @@ type AmiAmi struct {
 	IDSiklus       int            `gorm:"column:id_siklus" json:"id_siklus"`
 	Status         sql.NullString `gorm:"column:status" json:"status"`
 	TglRtm         carbon.Date    `gorm:"column:tgl_rtm" json:"tgl_rtm"`
-	TglSelesai     carbon.Date    `gorm:"column:tgl_selesai" json:"tgl_selesai"`
+	TglSelesai     sql.NullTime   `gorm:"column:tgl_selesai" json:"tgl_selesai"`
 }
 
 func (m *AmiAmi) TableName() string {
