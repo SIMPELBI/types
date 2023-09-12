@@ -8,6 +8,7 @@ type AmiStandar struct {
 	UtkPilihan string         `gorm:"column:utk_pilihan" json:"utk_pilihan"`
 	Isi        string         `gorm:"column:isi" json:"isi"`
 	IDSiklus   int            `gorm:"column:id_siklus" json:"id_siklus"`
+	Tahun      string         `gorm:"column:tahun" json:"tahun"`
 }
 
 func (m *AmiStandar) TableName() string {
