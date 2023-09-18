@@ -10,7 +10,7 @@ type AmiStandar struct {
 	IDSiklus   int            `gorm:"column:id_siklus" json:"id_siklus"`
 }
 
-type AmiStandarJopin struct {
+type AmiStandarJoin struct {
 	IDStandar  int            `gorm:"primaryKey;column:id_standar" json:"-"`
 	Standar    sql.NullString `gorm:"column:standar" json:"standar"`
 	UtkPilihan string         `gorm:"column:utk_pilihan" json:"utk_pilihan"`
