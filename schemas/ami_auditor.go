@@ -14,7 +14,7 @@ type AmiAuditor struct {
 	Telp       sql.NullString `gorm:"column:telp" json:"telp"`
 	Email      sql.NullString `gorm:"column:email" json:"email"`
 	Foto       string         `gorm:"column:foto" json:"foto"`
-	IDSiklus   sql.NullInt32  `gorm:"column:id_siklus" json:"id_siklus"`
+	IDSiklus   int            `gorm:"column:id_siklus" json:"id_siklus"`
 }
 
 func (m *AmiAuditor) TableName() string {
