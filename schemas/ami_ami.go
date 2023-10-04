@@ -15,9 +15,9 @@ type AmiAmi struct {
 	IDAuditorKetua int            `gorm:"column:id_auditor_ketua" json:"id_auditor_ketua"`
 	NmAuditorKetua string         `gorm:"column:nm_auditor_ketua" json:"nm_auditor_ketua"`
 	IDAnggota1     sql.NullInt32  `gorm:"column:id_anggota1" json:"id_anggota1"`
-	NmAuditor1     string         `gorm:"column:nm_auditor1" json:"nm_auditor1"`
+	NmAuditor1     string         `gorm:"column:anggota1" json:"anggota1"`
 	IDAnggota2     sql.NullInt32  `gorm:"column:id_anggota2" json:"id_anggota2"`
-	NmAuditor2     string         `gorm:"column:nm_auditor2" json:"nm_auditor2"`
+	NmAuditor2     string         `gorm:"column:anggota2" json:"anggota2"`
 	IDSiklus       int            `gorm:"column:id_siklus" json:"id_siklus"`
 	Tahun          int            `gorm:"column:tahun" json:"tahun"`
 	Status         sql.NullString `gorm:"column:status" json:"status"`
