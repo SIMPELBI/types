@@ -2,7 +2,8 @@ package model
 
 import (
 	"database/sql"
-	"time"
+
+	"github.com/golang-module/carbon/v2"
 )
 
 type AmiAmi struct {
@@ -20,7 +21,7 @@ type AmiAmi struct {
 	IDSiklus       int            `gorm:"column:id_siklus" json:"id_siklus"`
 	Tahun          int            `gorm:"column:tahun" json:"tahun"`
 	Status         sql.NullString `gorm:"column:status" json:"status"`
-	TglRtm         time.Time      `gorm:"column:tgl_rtm" json:"tgl_rtm"`
+	TglRtm         carbon.Carbon  `gorm:"column:tgl_rtm" json:"tgl_rtm"`
 	TglSelesai     sql.NullTime   `gorm:"column:tgl_selesai" json:"tgl_selesai"`
 }
 
