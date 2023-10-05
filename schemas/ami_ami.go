@@ -42,7 +42,9 @@ type RekapTemuan struct {
 	IDAmi      int    `gorm:"column:id_ami" json:"id_ami"`
 	IDFakultas int    `gorm:"column:id_fakultas" json:"id_fakultas"`
 	Prodi      string `gorm:"column:prodi" json:"prodi"`
-	Kts        string `gorm:"column:kts" json:"kts"`
+	Observasi  string `gorm:"column:observasi" json:"observasi"`
+	Minor      string `gorm:"column:minor" json:"minor"`
+	Mayor      string `gorm:"column:mayor" json:"mayor"`
 }
 
 func (m *AmiAmi) TableName() string {
