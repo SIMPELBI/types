@@ -38,6 +38,13 @@ type AmiAmiJoin struct {
 	TglSelesai     sql.NullTime  `gorm:"column:tgl_selesai" json:"tgl_selesai"`
 }
 
+type RekapTemuan struct {
+	IDAmi      int    `gorm:"column:id_ami" json:"id_ami"`
+	IDFakultas int    `gorm:"column:id_fakultas" json:"id_fakultas"`
+	Prodi      string `gorm:"column:prodi" json:"prodi"`
+	Kts        string `gorm:"column:kts" json:"kts"`
+}
+
 func (m *AmiAmi) TableName() string {
 	return "ami_ami"
 }

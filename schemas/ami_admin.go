@@ -15,13 +15,6 @@ type AmiAdmin struct {
 	IDLevel    sql.NullInt32  `gorm:"column:id_level" json:"id_level"`
 }
 
-type RekapTemuan struct {
-	IDAmi      int    `json:"id_ami"`
-	IDFakultas int    `json:"id_fakultas"`
-	Prodi      string `json:"prodi"`
-	Kts        string `json:"kts"`
-}
-
 func (m *AmiAdmin) TableName() string {
 	return "ami_admin"
 }
