@@ -6,6 +6,7 @@ type AmiProdi struct {
 	AmiConvert AmiConvert `gorm:"joinForeignKey:user_name;foreignKey:id_rtm;references:UserName" json:"ami_convert_list"`
 	IDFakultas int        `gorm:"column:id_fakultas" json:"id_fakultas"`
 	Prodi      string     `gorm:"column:prodi" json:"prodi"`
+	IDJenjang  int        `gorm:"column:id_jenjang" json:"id_jenjang"`
 	Jenjang    string     `gorm:"column:jenjang" json:"jenjang"`
 	Kaprodi    string     `gorm:"column:kaprodi" json:"kaprodi"`
 	Nidn       string     `gorm:"column:nidn" json:"nidn"`
