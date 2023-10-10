@@ -7,7 +7,6 @@ type AmiProdi struct {
 	IDFakultas int        `gorm:"column:id_fakultas" json:"id_fakultas"`
 	Prodi      string     `gorm:"column:prodi" json:"prodi"`
 	IDJenjang  int        `gorm:"column:id_jenjang" json:"id_jenjang"`
-	Jenjang    string     `gorm:"column:jenjang" json:"jenjang"`
 	Kaprodi    string     `gorm:"column:kaprodi" json:"kaprodi"`
 	Nidn       string     `gorm:"column:nidn" json:"nidn"`
 	Niknip     string     `gorm:"column:niknip" json:"niknip"`
@@ -17,13 +16,14 @@ type AmiProdi struct {
 	IDSiklus   int        `gorm:"column:id_siklus" json:"id_siklus"`
 }
 
-type AmiProdiData struct {
+type AmiProdiJoin struct {
 	IDProdi    int        `gorm:"primaryKey;column:id_prodi" json:"-"`
 	UserName   string     `gorm:"column:user_name" json:"user_name"`
 	AmiConvert AmiConvert `gorm:"joinForeignKey:user_name;foreignKey:id_rtm;references:UserName" json:"ami_convert_list"`
 	IDFakultas int        `gorm:"column:id_fakultas" json:"id_fakultas"`
 	Prodi      string     `gorm:"column:prodi" json:"prodi"`
 	IDJenjang  int        `gorm:"column:id_jenjang" json:"id_jenjang"`
+	Jenjang    string     `gorm:"column:jenjang" json:"jenjang"`
 	Kaprodi    string     `gorm:"column:kaprodi" json:"kaprodi"`
 	Nidn       string     `gorm:"column:nidn" json:"nidn"`
 	Niknip     string     `gorm:"column:niknip" json:"niknip"`
