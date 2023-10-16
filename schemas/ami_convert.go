@@ -15,6 +15,11 @@ type AmiConvertProfile struct {
 	Foto      string `gorm:"column:foto" json:"foto"`
 }
 
+type AmiConvertProfileNew struct {
+	IDRtm  string `gorm:"primaryKey;column:id_rtm" json:"-"`
+	IdUser int    `gorm:"column:id_user" json:"id_user"`
+}
+
 func (m *AmiConvert) TableName() string {
 	return "ami_convert"
 }
