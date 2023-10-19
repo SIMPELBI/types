@@ -45,6 +45,8 @@ type RekapTemuan struct {
 	Observasi  string `gorm:"column:observasi" json:"observasi"`
 	Minor      string `gorm:"column:minor" json:"minor"`
 	Mayor      string `gorm:"column:mayor" json:"mayor"`
+	IDSiklus   int    `gorm:"column:id_siklus" json:"id_siklus"`
+	Tahun      string `gorm:"column:tahun" json:"tahun"`
 }
 
 func (m *AmiAmi) TableName() string {
