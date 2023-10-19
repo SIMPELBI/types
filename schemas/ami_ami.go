@@ -41,6 +41,7 @@ type AmiAmiJoin struct {
 type RekapTemuan struct {
 	IDAmi      int    `gorm:"column:id_ami" json:"id_ami"`
 	IDFakultas int    `gorm:"column:id_fakultas" json:"id_fakultas"`
+	Fakultas   string `gorm:"column:fakultas" json:"fakultas"`
 	Prodi      string `gorm:"column:prodi" json:"prodi"`
 	Observasi  string `gorm:"column:observasi" json:"observasi"`
 	Minor      string `gorm:"column:minor" json:"minor"`
