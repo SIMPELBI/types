@@ -20,22 +20,22 @@ type AmiAmi struct {
 }
 
 type AmiAmiJoin struct {
-	IDAmi          int           `gorm:"primaryKey;column:id_ami" json:"-"`
-	IDFakultas     int           `gorm:"column:id_fakultas" json:"id_fakultas"`
-	Fakultas       string        `gorm:"column:fakultas" json:"fakultas"`
-	IDProdi        int           `gorm:"column:id_prodi" json:"id_prodi"`
-	Prodi          string        `gorm:"column:prodi" json:"prodi"`
-	IDAuditorKetua int           `gorm:"column:id_auditor_ketua" json:"id_auditor_ketua"`
-	NmAuditorKetua string        `gorm:"column:nm_auditor_ketua" json:"nm_auditor_ketua"`
-	IDAnggota1     int           `gorm:"column:id_anggota1" json:"id_anggota1"`
-	NmAuditor1     string        `gorm:"column:anggota1" json:"anggota1"`
-	IDAnggota2     int           `gorm:"column:id_anggota2" json:"id_anggota2"`
-	NmAuditor2     string        `gorm:"column:anggota2" json:"anggota2"`
-	IDSiklus       int           `gorm:"column:id_siklus" json:"id_siklus"`
-	Tahun          int           `gorm:"column:tahun" json:"tahun"`
-	Status         string        `gorm:"column:status" json:"status"`
-	TglRtm         carbon.Carbon `gorm:"column:tgl_rtm" json:"tgl_rtm"`
-	TglSelesai     carbon.Carbon `gorm:"column:tgl_selesai" json:"tgl_selesai"`
+	IDAmi          int    `gorm:"primaryKey;column:id_ami" json:"-"`
+	IDFakultas     int    `gorm:"column:id_fakultas" json:"id_fakultas"`
+	Fakultas       string `gorm:"column:fakultas" json:"fakultas"`
+	IDProdi        int    `gorm:"column:id_prodi" json:"id_prodi"`
+	Prodi          string `gorm:"column:prodi" json:"prodi"`
+	IDAuditorKetua int    `gorm:"column:id_auditor_ketua" json:"id_auditor_ketua"`
+	NmAuditorKetua string `gorm:"column:nm_auditor_ketua" json:"nm_auditor_ketua"`
+	IDAnggota1     int    `gorm:"column:id_anggota1" json:"id_anggota1"`
+	NmAuditor1     string `gorm:"column:anggota1" json:"anggota1"`
+	IDAnggota2     int    `gorm:"column:id_anggota2" json:"id_anggota2"`
+	NmAuditor2     string `gorm:"column:anggota2" json:"anggota2"`
+	IDSiklus       int    `gorm:"column:id_siklus" json:"id_siklus"`
+	Tahun          int    `gorm:"column:tahun" json:"tahun"`
+	Status         string `gorm:"column:status" json:"status"`
+	TglRtm         string `gorm:"column:tgl_rtm" json:"tgl_rtm"`
+	TglSelesai     string `gorm:"column:tgl_selesai" json:"tgl_selesai"`
 }
 
 type RekapTemuan struct {
