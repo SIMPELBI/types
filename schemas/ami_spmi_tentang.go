@@ -9,9 +9,9 @@ type AmiSpmiTentang struct {
 	Gambar    string        `gorm:"column:gambar" json:"gambar"`
 	Tanggal   carbon.Carbon `gorm:"column:tanggal" json:"tanggal"`
 	IDAdmin   int           `gorm:"column:id_admin" json:"id_admin"`
-	NmAdmin   string        `gorm:"-" json:"nm_admin,omitempty"`
+	NmAdmin   string        `gorm:"-" json:"nm_admin"`
 	IDPeriode int           `gorm:"column:id_periode" json:"id_periode"`
-	Tahun     string        `gorm:"-" json:"tahun,omitempty"`
+	Tahun     string        `gorm:"-" json:"tahun"`
 }
 
 func (m *AmiSpmiTentang) TableName() string {
