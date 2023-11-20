@@ -21,3 +21,7 @@ type AmiKepuasanTendikJoin struct {
 	IDPeriode        int           `gorm:"column:id_periode" json:"id_periode"`
 	Tahun            string        `gorm:"column:tahun" json:"tahun"`
 }
+
+func (m *AmiKepuasanTendik) TableName() string {
+	return "ami_kepuasan_tendik"
+}
