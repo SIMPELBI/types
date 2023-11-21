@@ -10,6 +10,7 @@ type AmiDokumenSpmi struct {
 	IDAdmin     int           `gorm:"column:id_admin" json:"id_admin"`
 	IDPeriode   int           `gorm:"column:id_periode" json:"id_periode"`
 	LinkDokumen string        `gorm:"column:link_dokumen" json:"link_dokumen"`
+	Keterangan  string        `gorm:"column:keterangan" json:"keterangan"`
 }
 
 type AmiDokumenSpmiJoin struct {
@@ -22,6 +23,7 @@ type AmiDokumenSpmiJoin struct {
 	IDPeriode   int           `gorm:"column:id_periode" json:"id_periode"`
 	Tahun       string        `gorm:"column:tahun" json:"tahun"`
 	LinkDokumen string        `gorm:"column:link_dokumen" json:"link_dokumen"`
+	Keterangan  string        `gorm:"column:keterangan" json:"keterangan"`
 }
 
 func (m *AmiDokumenSpmi) TableName() string {
