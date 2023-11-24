@@ -4,7 +4,7 @@ import "github.com/golang-module/carbon/v2"
 
 type AmiKebijakanSpmi struct {
 	IDKebijakanSpmi int           `gorm:"primaryKey;column:id_kebijakan_spmi" json:"-"`
-	Subject         string        `gorm:"column:subject" json:"subject"`
+	Judul           string        `gorm:"column:judul" json:"judul"`
 	Keterangan      string        `gorm:"column:keterangan" json:"keterangan"`
 	File            string        `gorm:"column:file" json:"file"`
 	LinkDokumen     string        `gorm:"column:link_dokumen" json:"link_dokumen"`
@@ -15,7 +15,7 @@ type AmiKebijakanSpmi struct {
 
 type AmiKebijakanSpmiJoin struct {
 	IDKebijakanSpmi int           `gorm:"primaryKey;column:id_kebijakan_spmi" json:"-"`
-	Subject         string        `gorm:"column:subject" json:"subject"`
+	Judul           string        `gorm:"column:judul" json:"judul"`
 	Keterangan      string        `gorm:"column:keterangan" json:"keterangan"`
 	File            string        `gorm:"column:file" json:"file"`
 	LinkDokumen     string        `gorm:"column:link_dokumen" json:"link_dokumen"`
