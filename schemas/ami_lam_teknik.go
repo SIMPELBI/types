@@ -4,7 +4,7 @@ import "github.com/golang-module/carbon/v2"
 
 type AmiLamTeknik struct {
 	IDLamTeknik      int           `gorm:"primaryKey;column:id_lamteknik" json:"-"`
-	SkSertifikat     string        `gorm:"column:sk_sertifikat" json:"sk_sertifikat"`
+	IDSkSertifikat   int           `gorm:"column:id_sk_sertifikat" json:"id_sk_sertifikat"`
 	Peringkat        string        `gorm:"column:peringkat" json:"peringkat"`
 	Konten           string        `gorm:"column:konten" json:"konten"`
 	MasaBerlakuStart carbon.Carbon `gorm:"column:masa_berlaku_start" json:"masa_berlaku_start"`
@@ -16,7 +16,8 @@ type AmiLamTeknik struct {
 
 type AmiLamTeknikJoin struct {
 	IDLamTeknik      int           `gorm:"primaryKey;column:id_lamteknik" json:"-"`
-	SkSertifikat     string        `gorm:"column:sk_sertifikat" json:"sk_sertifikat"`
+	IDSkSertifikat   int           `gorm:"column:id_sk_sertifikat" json:"id_sk_sertifikat"`
+	NamaSkSertifikat string        `gorm:"column:nama_sk_sertifikat" json:"nama_sk_sertifikat"`
 	Peringkat        string        `gorm:"column:peringkat" json:"peringkat"`
 	Konten           string        `gorm:"column:konten" json:"konten"`
 	MasaBerlakuStart carbon.Carbon `gorm:"column:masa_berlaku_start" json:"masa_berlaku_start"`
