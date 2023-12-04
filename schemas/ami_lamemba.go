@@ -31,5 +31,5 @@ type AmiLamembaJoin struct {
 }
 
 func (m *AmiLamemba) TableName() string {
-	return "ami_ban_pt"
+	return "ami_lamemba"
 }
