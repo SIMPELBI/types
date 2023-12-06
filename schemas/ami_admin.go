@@ -12,7 +12,7 @@ type AmiAdmin struct {
 	Nidn       string         `gorm:"column:nidn" json:"nidn"`
 	Foto       sql.NullString `gorm:"column:foto" json:"foto"`
 	IDSiklus   sql.NullInt32  `gorm:"column:id_siklus" json:"id_siklus"`
-	IDLevel    sql.NullInt32  `gorm:"column:id_level" json:"id_level"`
+	IDLevel    int            `gorm:"column:id_level" json:"id_level"`
 }
 
 func (m *AmiAdmin) TableName() string {
