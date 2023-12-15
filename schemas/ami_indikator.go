@@ -2,8 +2,8 @@ package model
 
 import "github.com/golang-module/carbon/v2"
 
-type AmiMekanisme struct {
-	IDMekanisme int           `gorm:"primaryKey;column:id_mekanisme" json:"-"`
+type AmiIndikator struct {
+	IDIndikator int           `gorm:"primaryKey;column:id_indikator" json:"-"`
 	IDAmi       int           `gorm:"column:id_ami" json:"idAmi"`
 	Question1   string        `gorm:"column:question1" json:"question1"`
 	Question2   string        `gorm:"column:question2" json:"question2"`
@@ -15,6 +15,6 @@ type AmiMekanisme struct {
 	IDAuditor   int           `gorm:"column:id_auditor" json:"idAuditor"`
 }
 
-func (m *AmiMekanisme) TableName() string {
-	return "ami_mekanisme"
+func (m *AmiIndikator) TableName() string {
+	return "ami_indikator"
 }
