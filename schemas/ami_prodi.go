@@ -1,6 +1,6 @@
 package model
 
-type AmiProdi struct {
+type AmiProdiUnit struct {
 	IDProdiUnit int        `gorm:"primaryKey;column:id_prodi_unit" json:"-"`
 	UserName    string     `gorm:"column:user_name" json:"user_name"`
 	AmiConvert  AmiConvert `gorm:"joinForeignKey:user_name;foreignKey:id_rtm;references:UserName" json:"ami_convert_list"`
@@ -16,7 +16,7 @@ type AmiProdi struct {
 	IDSiklus    int        `gorm:"column:id_siklus" json:"id_siklus"`
 }
 
-type AmiProdiJoin struct {
+type AmiProdiUnitJoin struct {
 	IDProdiUnit int        `gorm:"primaryKey;column:id_prodi_unit" json:"-"`
 	UserName    string     `gorm:"column:user_name" json:"user_name"`
 	AmiConvert  AmiConvert `gorm:"joinForeignKey:user_name;foreignKey:id_rtm;references:UserName" json:"ami_convert_list"`
@@ -33,6 +33,6 @@ type AmiProdiJoin struct {
 	IDSiklus    int        `gorm:"column:id_siklus" json:"id_siklus"`
 }
 
-func (m *AmiProdi) TableName() string {
-	return "ami_prodi"
+func (m *AmiProdiUnit) TableName() string {
+	return "ami_prodi_unit"
 }
