@@ -21,10 +21,10 @@ type AmiProdiJoin struct {
 	UserName    string     `gorm:"column:user_name" json:"user_name"`
 	AmiConvert  AmiConvert `gorm:"joinForeignKey:user_name;foreignKey:id_rtm;references:UserName" json:"ami_convert_list"`
 	IDFakultas  int        `gorm:"column:id_fakultas" json:"id_fakultas"`
-	Prodi       string     `gorm:"column:prodi" json:"prodi"`
+	ProdiUnit   string     `gorm:"column:prodi_unit" json:"prodi_unit"`
 	IDJenjang   int        `gorm:"column:id_jenjang" json:"id_jenjang"`
 	Jenjang     string     `gorm:"column:jenjang" json:"jenjang"`
-	Kaprodi     string     `gorm:"column:kaprodi" json:"kaprodi"`
+	Nama        string     `gorm:"column:nama" json:"nama"`
 	Nidn        string     `gorm:"column:nidn" json:"nidn"`
 	Niknip      string     `gorm:"column:niknip" json:"niknip"`
 	Telp        string     `gorm:"column:telp" json:"telp"`
