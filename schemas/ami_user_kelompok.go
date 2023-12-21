@@ -6,6 +6,6 @@ type AmiUserKelompok struct {
 	KodeUnit     string `gorm:"column:kode_unit" json:"kode_unit"`
 }
 
-func (*AmiUserKelompok) TableName() string {
+func (m *AmiUserKelompok) TableName() string {
 	return "ami_user_kelompok"
 }
