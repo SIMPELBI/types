@@ -6,6 +6,7 @@ type AmiStandar struct {
 	Standar     string `gorm:"column:standar" json:"standar"`
 	Isi         string `gorm:"column:isi" json:"isi"`
 	IDProdiUnit int    `gorm:"column:id_prodi_unit" json:"id_prodi_unit"`
+	IDSiklus    int    `gorm:"column:id_siklus" json:"id_siklus"`
 }
 
 type AmiStandarJoin struct {
@@ -16,6 +17,8 @@ type AmiStandarJoin struct {
 	Isi           string `gorm:"column:isi" json:"isi"`
 	IDProdiUnit   int    `gorm:"column:id_prodi_unit" json:"id_prodi_unit"`
 	ProdiUnit     string `gorm:"column:prodi_unit" json:"prodi_unit"`
+	IDSiklus      int    `gorm:"column:id_siklus" json:"id_siklus"`
+	Tahun         int    `gorm:"column:tahun" json:"tahun"`
 }
 
 func (m *AmiStandar) TableName() string {
