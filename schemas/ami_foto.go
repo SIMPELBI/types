@@ -15,8 +15,8 @@ type AmiFotoJoin struct {
 	IDAmi      int           `gorm:"column:id_ami" json:"id_ami"`
 	IDFakultas int           `gorm:"column:id_fakultas" json:"id_fakultas"`
 	Fakultas   string        `gorm:"column:fakultas" json:"fakultas"`
-	IDProdi    int           `gorm:"column:id_prodi" json:"id_prodi"`
-	Prodi      string        `gorm:"column:prodi" json:"prodi"`
+	IDProdi    int           `gorm:"column:id_prodi_unit" json:"id_prodi_unit"`
+	Prodi      string        `gorm:"column:prodi_unit" json:"prodi_unit"`
 	Foto       string        `gorm:"column:foto" json:"foto"`
 	Tgl        carbon.Carbon `gorm:"column:tgl" json:"tgl"`
 	IDAuditor  int           `gorm:"column:id_auditor" json:"id_auditor"`
