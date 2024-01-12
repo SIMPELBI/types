@@ -21,6 +21,7 @@ type AmiProdiUnitJoin struct {
 	UserName    string     `gorm:"column:user_name" json:"user_name"`
 	AmiConvert  AmiConvert `gorm:"joinForeignKey:user_name;foreignKey:id_rtm;references:UserName" json:"ami_convert_list"`
 	IDFakultas  int        `gorm:"column:id_fakultas" json:"id_fakultas"`
+	Fakultas    string     `gorm:"column:fakultas" json:"fakultas"`
 	ProdiUnit   string     `gorm:"column:prodi_unit" json:"prodi_unit"`
 	IDJenjang   int        `gorm:"column:id_jenjang" json:"id_jenjang"`
 	Jenjang     string     `gorm:"column:jenjang" json:"jenjang"`
