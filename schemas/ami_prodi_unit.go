@@ -32,6 +32,7 @@ type AmiProdiUnitJoin struct {
 	Email       string     `gorm:"column:email" json:"email"`
 	Foto        string     `gorm:"column:foto" json:"foto"`
 	IDSiklus    int        `gorm:"column:id_siklus" json:"id_siklus"`
+	Tahun       string     `gorm:"column:tahun" json:"tahun"`
 }
 
 func (m *AmiProdiUnit) TableName() string {
