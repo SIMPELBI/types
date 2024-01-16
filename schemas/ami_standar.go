@@ -12,7 +12,7 @@ type AmiStandar struct {
 type AmiStandarJoin struct {
 	IDStandar     int    `gorm:"primaryKey;column:id_standar" json:"-"`
 	Standar       string `gorm:"column:standar" json:"standar"`
-	IsiStandar    string `gorm:"column:isi" json:"isi_standar"`
+	Isi           string `gorm:"column:isi" json:"isi"`
 	IDIndikator   int    `gorm:"column:id_indikator" json:"id_indikator"`
 	NamaIndikator string `gorm:"column:nama_indikator" json:"nama_indikator"`
 	IsiIndikator  string `gorm:"column:isi" json:"isi_indikator"`
