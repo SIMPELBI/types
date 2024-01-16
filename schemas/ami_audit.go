@@ -38,6 +38,7 @@ type AmiAuditJoin struct {
 	IDAuditor     int           `gorm:"column:id_auditor" json:"id_auditor"`
 	Auditor       string        `gorm:"column:auditor" json:"auditor"`
 	TglPerbaikan  carbon.Carbon `gorm:"column:tgl_perbaikan" json:"tgl_perbaikan"`
+	Jawaban       string        `gorm:"column:jawaban" json:"jawaban"`
 }
 
 func (m *AmiAudit) TableName() string {
