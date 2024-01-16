@@ -16,6 +16,7 @@ type AmiAudit struct {
 	Tgl          carbon.Carbon `gorm:"column:tgl" json:"tgl"`
 	IDAuditor    int           `gorm:"column:id_auditor" json:"id_auditor"`
 	TglPerbaikan carbon.Carbon `gorm:"column:tgl_perbaikan" json:"tgl_perbaikan"`
+	Jawaban      string        `gorm:"column:jawaban" json:"jawaban"`
 }
 
 type AmiAuditJoin struct {
