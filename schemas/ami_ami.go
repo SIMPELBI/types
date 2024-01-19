@@ -75,7 +75,7 @@ type LaporanAMI struct {
 	TelponAnggotaAuditor2   string      `gorm:"column:telp_anggota2" json:"telp_anggota2"`
 	IDSiklus                int         `gorm:"column:id_siklus" json:"id_siklus"`
 	Tahun                   int         `gorm:"column:tahun" json:"tahun"`
-	Status                  string      `gorm:"column:status" json:"status"`
+	StatusAmi               string      `gorm:"column:status_ami" json:"status_ami"`
 	TglRtm                  carbon.Date `gorm:"column:tgl_rtm" json:"tgl_rtm"`
 	TglSelesai              carbon.Date `gorm:"column:tgl_selesai" json:"tgl_selesai"`
 	IDStandar               int         `gorm:"column:id_standar" json:"id_standar"`
@@ -92,6 +92,7 @@ type LaporanAMI struct {
 	Tindakan                string      `gorm:"column:tindakan" json:"tindakan"`
 	Target                  string      `gorm:"column:target" json:"target"`
 	Email                   string      `gorm:"column:email" json:"email"`
+	StatusAudit             string      `gorm:"column:status_audit" json:"status_audit"`
 }
 
 func (m *AmiAmi) TableName() string {
