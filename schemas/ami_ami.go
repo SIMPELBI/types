@@ -91,7 +91,6 @@ type LaporanAMI struct {
 	Uraian                  string      `gorm:"column:uraian" json:"uraian"`
 	Tindakan                string      `gorm:"column:tindakan" json:"tindakan"`
 	Target                  string      `gorm:"column:target" json:"target"`
-	Email                   string      `gorm:"column:email" json:"email"`
 	StatusAudit             string      `gorm:"column:status_audit" json:"status_audit"`
 }
 
