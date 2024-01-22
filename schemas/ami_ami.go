@@ -9,7 +9,6 @@ type AmiAmi struct {
 	IDFakultas     int           `gorm:"column:id_fakultas" json:"id_fakultas"`
 	IDProdiUnit    int           `gorm:"column:id_prodi_unit" json:"id_prodi_unit"`
 	IDAuditorKetua int           `gorm:"column:id_auditor_ketua" json:"id_auditor_ketua"`
-	IDStandar      int           `gorm:"column:id_standar" json:"id_standar"`
 	IDAnggota1     int           `gorm:"column:id_anggota1" json:"id_anggota1"`
 	IDAnggota2     int           `gorm:"column:id_anggota2" json:"id_anggota2"`
 	IDSiklus       int           `gorm:"column:id_siklus" json:"id_siklus"`
@@ -32,8 +31,6 @@ type AmiAmiJoin struct {
 	NmAuditor2     string      `gorm:"column:anggota2" json:"anggota2"`
 	IDSiklus       int         `gorm:"column:id_siklus" json:"id_siklus"`
 	Tahun          int         `gorm:"column:tahun" json:"tahun"`
-	IDStandar      int         `gorm:"column:id_standar" json:"id_standar"`
-	Standar        string      `gorm:"column:standar" json:"standar"`
 	Status         string      `gorm:"column:status" json:"status"`
 	TglRtm         carbon.Date `gorm:"column:tgl_rtm" json:"tgl_rtm"`
 	TglSelesai     carbon.Date `gorm:"column:tgl_selesai" json:"tgl_selesai"`
