@@ -2,7 +2,7 @@ package model
 
 type TblBuku struct {
 	Id              int    `gorm:"primaryKey;column:id" json:"-"`
-	NamaDosen       int    `gorm:"column:nama_dosen" json:"nama_dosen"`
+	NamaDosen       string `gorm:"column:nama_dosen" json:"nama_dosen"`
 	JudulBuku       string `gorm:"column:judul_buku" json:"judul_buku"`
 	TahunTerbit     string `gorm:"column:tahun_terbit" json:"tahun_terbit"`
 	Penerbit        string `gorm:"column:penerbit" json:"penerbit"`
