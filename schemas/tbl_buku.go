@@ -1,5 +1,6 @@
 package model
 
+// Struktur Tabel Publikasi Buku
 type TblBuku struct {
 	Id              int    `gorm:"primaryKey;column:id" json:"-"`
 	NamaDosen       string `gorm:"column:nama_dosen" json:"nama_dosen"`
@@ -14,6 +15,7 @@ type TblBuku struct {
 	JumlahKutipan   int    `gorm:"jumlah_kutipan" json:"jumlah_kutipan"`
 }
 
+// Inisialisasi Nama Tabel Buku
 func (m *TblBuku) TableName() string {
 	return "buku"
 }
