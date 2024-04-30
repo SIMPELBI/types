@@ -40,7 +40,7 @@ type RekapTemuan struct {
 	IDAmi      int    `gorm:"column:id_ami" json:"id_ami"`
 	IDFakultas int    `gorm:"column:id_fakultas" json:"id_fakultas"`
 	Fakultas   string `gorm:"column:fakultas" json:"fakultas"`
-	Prodi      string `gorm:"column:prodi" json:"prodi"`
+	ProdiUnit  string `gorm:"column:prodi_unit" json:"prodi_unit"`
 	Observasi  string `gorm:"column:observasi" json:"observasi"`
 	Minor      string `gorm:"column:minor" json:"minor"`
 	Mayor      string `gorm:"column:mayor" json:"mayor"`
