@@ -40,7 +40,7 @@ type AmiAuditJoin struct {
 	Auditor       string        `gorm:"column:auditor" json:"auditor"`
 	TglPerbaikan  carbon.Carbon `gorm:"column:tgl_perbaikan" json:"tgl_perbaikan"`
 	Jawaban       string        `gorm:"column:jawaban" json:"jawaban"`
-	LinkPerbaikan string        `gorm:"column:link_perbaikan" json:"link_perbaikan"`
+	LinkPerbaikan *string        `gorm:"column:link_perbaikan" json:"link_perbaikan"`
 }
 
 func (m *AmiAudit) TableName() string {
