@@ -92,7 +92,7 @@ type LaporanAMI struct {
 	Target                  string      `gorm:"column:target" json:"target"`
 	StatusAudit             string      `gorm:"column:status_audit" json:"status_audit"`
 	Kesimpulan              string      `gorm:"column:kesimpulan" json:"kesimpulan"`
-	TglPelaksanaan 			string `gorm:"column:tanggal_pelaksanaan" json:"tanggal_pelaksanaan"`
+	TglPelaksanaan 			carbon.Date `gorm:"column:tanggal_pelaksanaan" json:"tanggal_pelaksanaan"`
 }
 
 func (m *AmiAmi) TableName() string {
