@@ -15,6 +15,7 @@ type AmiAmi struct {
 	Status         string        `gorm:"column:status" json:"status"`
 	TglRtm         carbon.Carbon `gorm:"column:tgl_rtm" json:"tgl_rtm"`
 	TglSelesai     carbon.Carbon `gorm:"column:tgl_selesai" json:"tgl_selesai"`
+	TglPelaksanaan carbon.Carbon `gorm:"column:tgl_pelaksanaan" json:"tanggal_pelaksanaan"`
 }
 
 type AmiAmiJoin struct {
