@@ -22,6 +22,7 @@ type AmiAmi struct {
 
 type AmiAmiJoin struct {
 	IDAmi          int         `gorm:"primaryKey;column:id_ami" json:"-"`
+	IDAudit        int         `gorm:"column:id_audit" json:"id_audit"`
 	IDFakultas     int         `gorm:"column:id_fakultas" json:"id_fakultas"`
 	Fakultas       string      `gorm:"column:fakultas" json:"fakultas"`
 	IDProdiUnit    int         `gorm:"column:id_prodi_unit" json:"id_prodi_unit"`
