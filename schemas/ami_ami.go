@@ -1,6 +1,8 @@
 package model
 
 import (
+	"time"
+
 	"github.com/golang-module/carbon/v2"
 )
 
@@ -15,7 +17,7 @@ type AmiAmi struct {
 	Status         string        `gorm:"column:status" json:"status"`
 	TglRtm         carbon.Carbon `gorm:"column:tgl_rtm" json:"tgl_rtm"`
 	TglSelesai     carbon.Carbon `gorm:"column:tgl_selesai" json:"tgl_selesai"`
-	TglPelaksanaan carbon.Carbon `gorm:"column:tanggal_pelaksanaan" json:"tanggal_pelaksanaan"`
+	TglPelaksanaan time.Time     `gorm:"column:tanggal_pelaksanaan" json:"tanggal_pelaksanaan"`
 }
 
 type AmiAmiJoin struct {
@@ -35,7 +37,7 @@ type AmiAmiJoin struct {
 	Status         string      `gorm:"column:status" json:"status"`
 	TglRtm         carbon.Date `gorm:"column:tgl_rtm" json:"tgl_rtm"`
 	TglSelesai     carbon.Date `gorm:"column:tgl_selesai" json:"tgl_selesai"`
-	TglPelaksanaan carbon.Date `gorm:"column:tanggal_pelaksanaan" json:"tanggal_pelaksanaan"`
+	TglPelaksanaan time.Time   `gorm:"column:tanggal_pelaksanaan" json:"tanggal_pelaksanaan"`
 }
 
 type RekapTemuan struct {
@@ -92,7 +94,7 @@ type LaporanAMI struct {
 	Target                  string      `gorm:"column:target" json:"target"`
 	StatusAudit             string      `gorm:"column:status_audit" json:"status_audit"`
 	Kesimpulan              string      `gorm:"column:kesimpulan" json:"kesimpulan"`
-	TglPelaksanaan 			carbon.Date `gorm:"column:tanggal_pelaksanaan" json:"tanggal_pelaksanaan"`
+	TglPelaksanaan          carbon.Date `gorm:"column:tanggal_pelaksanaan" json:"tanggal_pelaksanaan"`
 }
 
 func (m *AmiAmi) TableName() string {
